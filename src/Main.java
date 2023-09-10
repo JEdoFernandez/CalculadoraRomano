@@ -21,3 +21,16 @@ public class Main {
         String[] decenas = {" ", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"};
         String[] centenas = {" ", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"};
         String[] millares = {" ", "M", "MM", "MMM"};
+        int indexmil, indexcen, indexdec, indexuni;
+        indexmil = numero / 1000;
+        numero = numero % 1000;
+        indexcen = numero / 100;
+        numero = numero % 100;
+        indexdec = numero / 10;
+        numero = numero % 10;
+        indexuni = numero;
+
+        return millares[indexmil] + centenas[indexcen] + decenas[indexdec] + unidades[indexuni];
+
+    }
+}
