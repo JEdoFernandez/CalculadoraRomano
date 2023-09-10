@@ -16,3 +16,8 @@ public class Main {
         }
 
     }
+    public static String convertirARomano(int numero) {
+        String[] unidades = {" ", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"};
+        String[] decenas = {" ", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"};
+        String[] centenas = {" ", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"};
+        String[] millares = {" ", "M", "MM", "MMM"};
